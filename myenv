@@ -1,0 +1,6 @@
+# local
+alias ap="ansible-playbook"
+alias python="python3"
+source /usr/share/doc/fzf/examples/key-bindings.bash
+alias vim="nvim"
+export PATH="/home/lab/.cargo/bin:$PATH"

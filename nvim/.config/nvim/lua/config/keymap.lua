@@ -1,0 +1,33 @@
+-- Useful remap
+vim.keymap.set("n", "<leader>fv", vim.cmd.Ex)
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+vim.keymap.set("n", "J", "mzJ`z")
+vim.keymap.set("n", "<C-Down>", "<C-d>zz")
+vim.keymap.set("n", "<C-Up>", "<C-u>zz")
+vim.keymap.set("n", "n", "nzzzv")
+vim.keymap.set("n", "N", "Nzzzv")
+-- greatest remap ever
+vim.keymap.set("x", "<leader>p", [["_dP]])
+vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
+vim.keymap.set("n", "<leader>Y", [["+Y]])
+vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
+-- This is going to get me cancelled
+vim.keymap.set("i", "<C-c>", "<Esc>")
+vim.keymap.set("n", "Q", "<nop>")
+
+-- Personal mapping
+vim.keymap.set("n", "<leader>ev", "<cmd>:e ~/.config/nvim/lua/config/keymap.lua<cr>")
+vim.keymap.set({ "i"}, "jj", "<esc>")
+vim.keymap.set({"n", "v"}, "<leader><Space>", ":")
+vim.keymap.set("n", "U", "<C-R>")
+vim.keymap.set("n", "<bs>", '<C-^>`"zz')
+vim.keymap.set("n", "c*", "*``cgn")
+vim.keymap.set("n", "c#", "#``cgN")
+vim.keymap.set("i", "<C-e>", "<C-o>$")
+vim.keymap.set("i", "<C-a>", "<C-o>^")
+vim.keymap.set("n", "<C-e>", "A")
+vim.keymap.set("n", "<C-a>", "I")
+vim.keymap.set("n", "<leader>w", "<cmd>:w!<cr>")
+vim.keymap.set("n", "<leader>q", "<cmd>:q!<cr>")
+vim.keymap.set("n", "<leader>fa", "<cmd>:set ft=yaml.ansible<cr>")
